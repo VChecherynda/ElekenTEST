@@ -32,15 +32,15 @@
 			
 				<div class="header__main">
 					<div class="container">
-						<div class="logo">C&B</div>
+						<div class="logo">C<span>&</span>B</div>
 						
 						<nav class="navigation">
-							<li><a href="/">Home</a></li>
-							<li><a href="/">Catalog</a></li>
-							<li><a href="/">News</a></li>
-							<li><a href="/">Sale</a></li>
-							<li><a href="/">About</a></li>
-							<li><a href="/">Contact</a></li>
+							<li class="item item--nav"><a class="link link--nav" href="/">Home</a></li>
+							<li class="item item--nav"><a class="link link--nav" href="/">Catalog</a></li>
+							<li class="item item--nav"><a class="link link--nav" href="/">News</a></li>
+							<li class="item item--nav"><a class="link link--nav link--red" href="/">Sale</a></li>
+							<li class="item item--nav"><a class="link link--nav" href="/">About</a></li>
+							<li class="item item--nav"><a class="link link--nav" href="/">Contact</a></li>
 						</nav>
 									
 						<div class="purchase">
@@ -58,130 +58,142 @@
 			</header>
 			
 			<main>
-			
-				<div class="catalog">
 
-					<header class="catalog__header">Catalog</header>
-					
-					<ul class="catalog-nav">
-						<li><a href="/">All</a></li>
-						<li><a href="/">T-shirts</a></li>
-						<li><a href="/">Sweaters</a></li>
-						<li><a href="/">Shorts</a></li>
-						<li><a href="/">Jackets</a></li>
-						<li><a href="/">ACCESSOIRES</a></li>
-					</ul>
-			
-					<div id="all" class="catalog__body">
-				
-						<div class="catalog__item">
-							<div class="catalog__pic">
-								<img src="img/shorts_1.jpg" alt="shorts_1">
-							</div>
-							<div class="catalog__caption">
-								<span class="catalog__text">Printed swimsuit</span>
-								<span class="catalog__price">$23</span>
-							</div>
-						</div>
-									
-						<div class="catalog__item">
-							<div class="catalog__pic">
-								<img src="img/shorts_2.jpg" alt="shorts_2">
-							</div>
-							<div class="catalog__caption">
-								<span class="catalog__text">Jogging bermuda shorts</span>
-								<span class="catalog__price catalog__price--cross">$36</span>
-								<span class="catalog__price catalog__price--red">$12</span>
-							</div>
-						</div>
-									
-						<div class="catalog__item">
-							<div class="catalog__pic">
-								<span class="pic__new"></span>
-								<img src="img/flip_1.jpg" alt="flip_1">
-							</div>
-							<div class="catalog__caption">
-								<span class="catalog__text">Basic beach flip flops</span>
-								<span class="catalog__price">$9</span>
-							</div>
-						</div>
-									
-						<div class="catalog__item">
-							<div class="catalog__pic">
-								<img src="img/sunglass_1.jpg" alt="sunglass">
-							</div>
-							<div class="catalog__caption">
-								<span class="catalog__text">Black sunglasses</span>
-								<span class="catalog__price">$29</span>
-							</div>
-						</div>
-									
-						<div class="catalog__item">
-							<div class="catalog__pic">
-								<img src="img/shirt_1.jpg" alt="shirt_1">
-							</div>
-							<div class="catalog__caption">
-								<span class="catalog__text">Long sleeved twill shirt</span>
-								<span class="catalog__price">$20</span>
-							</div>
-						</div>
-									
-						<div class="catalog__item">
-							<div class="catalog__pic">
-								<img src="img/shorts_3.jpg" alt="shorts_3">
-							</div>
-							<div class="catalog__caption">
-								<span class="catalog__text">Basic swimsuit</span>
-								<span class="catalog__price">$36</span>
-							</div>
-						</div>
-									
-						<div class="catalog__item">
-							<div class="catalog__pic">
-								<img src="img/shorts_4.jpg" alt="shorts_4">
-							</div>
-							<div class="catalog__caption">
-								<span class="catalog__text">Bleached shorts</span>
-								<span class="catalog__price">$12</span>
-							</div>
-						</div>
-									
-						<div class="catalog__item">
-							<div class="catalog__pic">
-								<img src="img/t-shirt_1.jpg" alt="t-shirt_1">
-							</div>
-							<div class="catalog__caption">
-								<span class="catalog__text">T-shirt with lower panel</span>
-								<span class="catalog__price catalog__price--cross">$32</span>
-								<span class="catalog__price catalog__price--red">$12</span>
-							</div>
-						</div>
-									
-						<a class="load-more" href="/">Load more...</a>
+				<div class="container">
 
-					</div>
+					<div class="catalog">
+
+						<header class="catalog__header">Catalog</header>
 						
+						<nav class="navigation navigation--catalog">
+							<li class="item item--nav"><a class="link link--nav" href="/">All</a></li>
+							<li class="item item--nav"><a class="link link--nav" href="/">T-shirts</a></li>
+							<li class="item item--nav"><a class="link link--nav" href="/">Sweaters</a></li>
+							<li class="item item--nav"><a class="link link--nav" href="/">Shorts</a></li>
+							<li class="item item--nav"><a class="link link--nav" href="/">Jackets</a></li>
+							<li class="item item--nav"><a class="link link--nav" href="/">ACCESSOIRES</a></li>
+						</nav>
+				
+						<div id="all" class="catalog__body">
+					
+							<div class="catalog__item">
+								<div class="catalog__pic">
+									<img src="img/shorts_1.jpg" alt="shorts_1">
+								</div>
+								<div class="catalog__caption">
+									<span class="catalog__text">Printed swimsuit</span>
+									<span class="catalog__price">$23</span>
+								</div>
+							</div>
+										
+							<div class="catalog__item">
+								<div class="catalog__pic">
+									<img src="img/shorts_2.jpg" alt="shorts_2">
+								</div>
+								<div class="catalog__caption">
+									<span class="catalog__text">Jogging bermuda shorts</span>
+									<span class="catalog__price catalog__price--cross"><strike>$36</strike></span>
+									<span class="catalog__price catalog__price--red">$12</span>
+								</div>
+							</div>
+										
+							<div class="catalog__item">
+								<div class="catalog__pic">
+									<span class="pic__new"></span>
+									<img src="img/flip_1.jpg" alt="flip_1">
+								</div>
+								<div class="catalog__caption">
+									<span class="catalog__text">Basic beach flip flops</span>
+									<span class="catalog__price">$9</span>
+								</div>
+							</div>
+										
+							<div class="catalog__item">
+								<div class="catalog__pic">
+									<img src="img/sunglass_1.jpg" alt="sunglass">
+								</div>
+								<div class="catalog__caption">
+									<span class="catalog__text">Black sunglasses</span>
+									<span class="catalog__price">$29</span>
+								</div>
+							</div>
+										
+							<div class="catalog__item">
+								<div class="catalog__pic">
+									<img src="img/shirt_1.jpg" alt="shirt_1">
+								</div>
+								<div class="catalog__caption">
+									<span class="catalog__text">Long sleeved twill shirt</span>
+									<span class="catalog__price">$20</span>
+								</div>
+							</div>
+										
+							<div class="catalog__item">
+								<div class="catalog__pic">
+									<img src="img/shorts_3.jpg" alt="shorts_3">
+								</div>
+								<div class="catalog__caption">
+									<span class="catalog__text">Basic swimsuit</span>
+									<span class="catalog__price">$36</span>
+								</div>
+							</div>
+										
+							<div class="catalog__item">
+								<div class="catalog__pic">
+									<img src="img/shorts_4.jpg" alt="shorts_4">
+								</div>
+								<div class="catalog__caption">
+									<span class="catalog__text">Bleached shorts</span>
+									<span class="catalog__price">$12</span>
+								</div>
+							</div>
+										
+							<div class="catalog__item">
+								<div class="catalog__pic">
+									<img src="img/t-shirt_1.jpg" alt="t-shirt_1">
+								</div>
+								<div class="catalog__caption">
+									<span class="catalog__text">T-shirt with lower panel</span>
+									<span class="catalog__price catalog__price--cross"><strike>$32</strike></span>
+									<span class="catalog__price catalog__price--red">$12</span>
+								</div>
+							</div>
+										
+							<a class="load-more" href="/">Load more...</a>
+
+						</div>
+							
+					</div>	
+
 				</div>	
 			
 				<div class="news">
-					<p>Subscribe</p>
-					<header>Stay updated on news</header>
-					<input type="text" placeholder="your email address">
+					<div class="container container--news">
+						<p class="news__subscribe">Subscribe</p>
+						<header class="news__header">Stay updated on news</header>
+						<input class="news__email" type="text" placeholder="your email address">
+					</div>
 				</div>
 				
 			</main>
 			
 			<footer>
-				<div class="logo">C&B</div>
-			
-				<nav class="navigation">
-					<li><a href="/">Home</a></li>
-					<li><a href="/">Catalog</a></li>
-					<li><a href="/">News</a></li>
-					<li><a href="/">Sale</a></li>
-					<li><a href="/">About</a></li>
-					<li><a href="/">Contact</a></li>
-				</nav>
+
+				<div class="container">
+					<div class="logo">C<span>&</span>B</div>
+								
+					<nav class="navigation">
+						<li class="item item--nav"><a class="link link--foot" href="/">Home</a></li>
+						<li class="item item--nav"><a class="link link--foot" href="/">Catalog</a></li>
+						<li class="item item--nav"><a class="link link--foot" href="/">News</a></li>
+						<li class="item item--nav"><a class="link link--foot" href="/">Sale</a></li>
+						<li class="item item--nav"><a class="link link--foot" href="/">About</a></li>
+						<li class="item item--nav"><a class="link link--foot" href="/">Contact</a></li>
+					</nav>
+
+					<span class="copyright">©2010 - 2016 All rights reserved</span>
+
+				</div>
 			
 			</footer>
 
