@@ -56,13 +56,18 @@ body {
 	color: rgba(51,51,51,0.5);
 }
 
+p {
+	letter-spacing: 1px;
+}
+
 .logo {
 	width: 94px;
-	height: 39px;
+	height: 42px;
 	text-indent: -9999px;
 	font: bold 52px/1 'Times New Roman', sans-serif;
 	color: #333;
 	background: url('../img/logo.png') no-repeat;
+	background-position: 0 4px;
 }
 
 .logo span {
@@ -71,6 +76,7 @@ body {
 
 .link {
 	display: block;
+	font-weight: bold;
 	padding: 16px 0 15px 0;
 	color: rgba(51,51,51,0.5);
 }
@@ -109,20 +115,26 @@ body {
 	margin-right: 32px;
 }
 
+.link--delivery,
+.link--cur  {
+	font-size: 11px;
+	letter-spacing: 1px;
+}
+
 .arrow__bot {
 	background: url('../img/arrow__bot.png') no-repeat right center;
 }
 
 .arrow__bot--cur {
-	background-position: 69px center ; 
+	background-position: 69px 20px; 
 }
 
 .link--cur {
-	padding-right: 41px; 
+	padding-right: 39px; 
 }
 
 .link--language {
-	padding-right: 18px;  
+	padding-right: 16px;  
 	padding-left: 20px;
 	border-left: 1px solid #EDEDED ;
 }
@@ -130,7 +142,7 @@ body {
 	/*--- HEADER MAIN ---*/
 
 	.header__main {
-		padding: 28px 0;
+		padding: 25px 0;
 		border-bottom: 1px solid #EDEDED;
 	}
 
@@ -139,13 +151,22 @@ body {
 		align-items: center;
 	}
 
+	.navigation {
+		margin-left: 75px;
+	}
+
 	.item--nav + .item--nav {
-		margin-left: 52px;
+		margin-left: 53px;
+	}
+
+	.item--about {
+		margin-left: 73px !important;
 	}
 
 	.link--nav {
-		font-weight: 700;
 		padding: 6px 0;
+		font-weight: bold;
+		letter-spacing: 1.3px;
 	}
 
 	.link--red {
@@ -159,7 +180,7 @@ body {
 	}
 
 	.purchase__text {
-		margin-right: 18px;
+		margin-right: 15px;
 	}
 
 	.purchase__quantity {
@@ -187,17 +208,18 @@ body {
 }
 
 .catalog__header {
-	padding: 100px 0 64px 0;
-	font: 52px/1 'Playfair Display', sans-serif;
-	color: #333;
-	text-transform: none;
-	text-align: center;
+	padding: 96px 0 57px 7px;
+    font: 56px/1 'Playfair Display', sans-serif;
+    letter-spacing: 1.1px;
+    color: #333;
+    text-transform: none;
+    text-align: center;
 }
 
 .navigation--catalog {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 40px;
+	margin: 0 0 42px 5px;
 }
 
 .catalog__body{
@@ -207,9 +229,9 @@ body {
 }
 
 .catalog__item {
-	flex-basis: calc(25% - 30px);
+	flex-basis: calc(292px - 30px);
 	margin-right: 30px;
-	margin-bottom: 40px;
+	margin-bottom: 36px;
 	text-align: center;
 }
 
@@ -218,6 +240,7 @@ body {
 }
 
 .catalog__item img {
+	display: block;
 	width: 100%;
 }
 
@@ -228,15 +251,23 @@ body {
 }
 
 .catalog__text {
-	padding: 27px 0 10px 0;
+	padding: 28px 0 9px 0;
 	font: 16px/1 'Playfair Display', sans-serif;
 	text-transform: none;
 	color: #333;
 }
 
+.catalog__price  {
+	font-size: 16px;
+}
+
 .catalog__price--cross,
 .catalog__price--red {
 	display: inline-block;
+}
+
+.catalog__price--cross {
+	margin-right: 8px;
 }
 
 .catalog__price--red  {
@@ -258,14 +289,14 @@ body {
 }
 
 .news {
-	padding-top: 70px;
+	padding-top: 67px;
 	text-align: center;
 	background: url('../img/news.jpg') no-repeat;
 	background-size: cover;
 }
 
 .news__header {
-	padding: 25px 0;
+	padding: 20px 0 29px 0;
 	font: 38px/1 'Playfair Display', sans-serif;
 	text-transform: none;
 	color: #fff;
@@ -275,9 +306,10 @@ body {
 	display: block;
 	width: 302px;
 	height: 50px;
-	margin: 0 auto 70px auto;
-	padding: 0 35px 0 25px;
-	letter-spacing: 1px;
+	margin: 0 auto 69px auto;
+	padding: 0 35px 0 24px;
+	font-size: 12px;
+	letter-spacing: 1.1px;
 	text-transform: uppercase;
 	color: #fff;
 	background: transparent url('../img/arrow__right.png') no-repeat 270px center;
@@ -291,9 +323,9 @@ body {
 }
 
 .news__email::-webkit-input-placeholder {
-	font-family: bold 20px/1 'Lato', sans-serifl
+	font-family: bold 12px/1 'Lato', sans-serifl
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	letter-spacing: 1.1px;
 	color: #fff;
 }
 
@@ -301,6 +333,14 @@ body {
 
 footer {
 	padding: 30px 0 60px 0;
+}
+
+.navigation--footer {
+	margin-left: 121px;
+}
+
+.item--foot + .item--foot {
+	margin-left: 52px;
 }
 
 .link--foot {
@@ -313,6 +353,6 @@ footer {
 	display: flex;
 	align-items: center;
 	font-weight: bold;
-	letter-spacing: 1px;
+	letter-spacing: 1.2px;
 	text-transform: none;
 }
