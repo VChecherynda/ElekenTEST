@@ -23,8 +23,18 @@
 									
 						<div class="top__right">
 							<ul class="top__right-nav">
-								<li class="item"><a class="link link--cur arrow__bot arrow__bot--cur" href="/">Dollars</a></li>
-								<li class="item"><a class="link link--language arrow__bot" href="/">En</a></li>
+								<li class="item item--sub"><a class="link link--currency arrow__bot arrow__bot--cur" href="/">Dollars</a>
+									<ul class="top__right-sub top__right-sub--cur">
+										<li class="item"><a class="link link--cur" href="/">Euro</a></li>
+										<li class="item"><a class="link link--cur" href="/">UAH</a></li>
+									</ul>
+								</li>
+								<li class="item item--sub"><a class="link link--language arrow__bot" href="/">En</a>
+									<ul class="top__right-sub">
+										<li class="item"><a class="link link--lan" href="/">UA</a></li>
+										<li class="item"><a class="link link--lan" href="/">FN</a></li>
+									</ul>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -49,6 +59,7 @@
 								<span class="purchase__quantity">2</span>
 							</div>
 							<form class="purchase__search">
+								<span class="search-icon search-icon--purchase"></span>
 								<input type="text">
 							</form>
 						</div>
@@ -66,8 +77,8 @@
 						<header class="catalog__header">Catalog</header>
 						
 						<nav class="navigation navigation--catalog">
-							<li class="item item--nav"><a class="link link--nav" href="/">All</a></li>
-							<li class="item item--nav"><a class="link link--nav" href="/">T-shirts</a></li>
+							<li class="item item--nav"><a class="link link--nav" data="all" href="/">All</a></li>
+							<li class="item item--nav"><a class="link link--nav" data="t-shirts" href="/">T-shirts</a></li>
 							<li class="item item--nav"><a class="link link--nav" href="/">Sweaters</a></li>
 							<li class="item item--nav"><a class="link link--nav" href="/">Shorts</a></li>
 							<li class="item item--nav"><a class="link link--nav" href="/">Jackets</a></li>
@@ -99,7 +110,7 @@
 										
 							<div class="catalog__item">
 								<div class="catalog__pic">
-									<span class="pic__new"></span>
+									<span class="pic__new">new</span>
 									<img src="img/flip_1.jpg" alt="flip_1">
 								</div>
 								<div class="catalog__caption">
@@ -200,6 +211,7 @@
 	</div>
 		
 
+	<script src="js/jquery-3.2.1.js"></script>	
 	<script src="js/script.js"></script>	
 
 	</body>
