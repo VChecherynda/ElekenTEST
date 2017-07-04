@@ -30,20 +30,49 @@
 		});
 	}
 
+	// Search 
+
+	let searchItem = $('.purchase__search');
+
+	function search(item) {
+		$('body').on('click', function() {
+			item.children('input').removeClass('active').val('');
+		})
+
+		item.on('click', function(e){
+			e.stopPropagation();
+			$(this).children('input').addClass('active');
+		})
+	}
+
+	// Filter catalog
+
+	let catalogItem = $('.navigation--catalog').children().children();
+	let items = $('.catalog__item');
+
+	function filterCatalog() {
+		catalogItem.on('click', function(){
+
+			let category = $(this).attr('data-category');
+
+			if( category != 'all' ) {
+				items.hide(200).filter('[data-category ='+ category +']').show(500);
+			} else {
+				items.show(500);
+			}		
+
+			// console.log($(this).attr('data'));
+
+			return false;
+		});
+	}
+
+	search(searchItem);
+
 	changeStatus($('.link--currency'));
 	changeStatus($('.link--language'));
 	
-	// Search 
+	filterCatalog();
 
-	$('body').on('click', function() {
-		$('.purchase__search').children('input').removeClass('active').val('');
-	})
-
-	$('.purchase__search').on('click', function(e){
-		e.stopPropagation();
-		$(this).children('input').addClass('active');
-	})
-
-	// Filter catalog
 
 })(jQuery, window, document);

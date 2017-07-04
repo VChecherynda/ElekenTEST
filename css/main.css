@@ -171,6 +171,7 @@ p {
 
 	visibility: hidden;
 	opacity: 0;
+	z-index: 2;
 }
 
 .top__right-sub--cur {
@@ -280,7 +281,7 @@ p {
 /*--- CATALOG---*/
 
 .catalog {
-	margin-bottom: 60px;	
+	margin: 0 auto 60px auto;	
 }
 
 .catalog__header {
@@ -302,6 +303,7 @@ p {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	min-height: 472px;
 }
 
 .catalog__item {
@@ -371,11 +373,18 @@ p {
 }
 
 .load-more {
+	width: 100%;
 	margin: 0 auto;
 	padding-top: 20px;
+	text-align: center;
 	font-weight: bold;
 	letter-spacing: 1px;
 	color: rgba(51,51,51,.5);
+	align-self: flex-end;
+}
+
+.load-more:hover {
+	color: #000;
 }
 
 /*--- NEWS ---*/
